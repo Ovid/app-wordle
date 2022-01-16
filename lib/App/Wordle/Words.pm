@@ -6,6 +6,7 @@ use warnings;
 use Carp 'croak';
 use base 'Exporter';
 
+our $VERSION = '0.1';
 our @EXPORT_OK = ('words');
 
 sub words {

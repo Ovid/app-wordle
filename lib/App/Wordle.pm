@@ -9,6 +9,8 @@ use Term::ANSIColor 'colored';
 use Carp 'croak';
 use App::Wordle::Words 'words';
 
+our $VERSION = '0.1';
+
 use constant NUM_GUESSES => 6;
 
 sub run {
