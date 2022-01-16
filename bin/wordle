@@ -1,0 +1,46 @@
+#!/usr/bin/env perl
+
+# ABSTRACT: Perl homage to the wordle game # (https://www.powerlanguage.co.uk/wordle/)
+
+# vim: filetype=perl
+
+use strict;
+use warnings;
+use App::Wordle;
+App::Wordle->run;
+
+__END__
+
+=head1 NAME
+
+wordle - Perl homage to the world game (https://www.powerlanguage.co.uk/wordle/)
+
+=head1 SYNOPSIS
+
+    $ wordle
+    Enter your guess: arise
+    ...
+
+=head1 HOW TO PLAY
+
+You have six tries to guess a five-letter word. For every guess, if you have a
+correct letter in the correct position, it will show up as bright green on black.
+
+If you have a correct letter in the wrong position, it will show up as bright
+red on black.
+
+If you have an incorrect letter, it will show up as bright white on black.
+
+=head1 LIMITATIONS
+
+This does not run properly on Windows (due to the color codes).
+
+The wordlist can be found in C<App::Wordle::Words::EN_US> and is somewhat
+limited.  I tried using a standard wordlist from C</usr/dict/words>, but it
+had too many words that I've never heard of, making the game unreasonably
+hard. I've chosen a simpler word list, but it's missing many common words.
+
+=head1 DISCLAIMER
+
+There appears to be no copyright on Wordle, or restrictions on its usage. The
+name of this package may change if that turns out to not be the case.
