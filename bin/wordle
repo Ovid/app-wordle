@@ -1,11 +1,14 @@
 #!/usr/bin/env perl
 
-# ABSTRACT: Perl homage to the wordle game # (https://www.powerlanguage.co.uk/wordle/)
+# ABSTRACT: Perl homage to the wordle game (https://www.powerlanguage.co.uk/wordle/)
 
 # vim: filetype=perl
 
 use strict;
 use warnings;
+
+our $VERSION = '0.1';
+
 use App::Wordle;
 App::Wordle->run;
 
